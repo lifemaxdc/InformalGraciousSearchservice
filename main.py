@@ -2,13 +2,13 @@ import discord                 # import discord.py
 import os                      # for the token
 
 
-
-client = discord.Client()       # client is our connection to discord
+intents = discord.Intents.default() #Creates intents object
+client = discord.Client(intents=intents)  # pass intents to client
 
 
 @client.event                    # we define an event here
 async def on_ready():         # this event is called when the bot is ready (setup)
-    print('LifeMax: We have logged in as {0.user}'.format(client))         
+    print('Hey King, we have logged in as {0.user}'.format(client))         
         # print to console only
 
 @client.event
@@ -17,6 +17,6 @@ async def on_message(message):      # these functions are from discord.py librar
         return
 
     if message.content.startswith('^hello'):
-      await message.channel.send('Hello!')
+      print('Hello!')
 
 client.run(os.getenv('DCTOKEN')) #gets discord token from hidden .env file
