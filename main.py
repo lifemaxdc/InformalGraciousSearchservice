@@ -1,7 +1,6 @@
 import discord                 # discord.py
 import os                      # for the token
 import json                    # to read the JSON from the API
-import requests
 import random                  # for randomizing the quotes (encouragement)
 import sqlite3                 # replacement for replit database
 db = sqlite3.connect('/tmp/bot.db')
