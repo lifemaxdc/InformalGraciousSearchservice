@@ -173,4 +173,4 @@ async def on_message(message):
 
 # ================== RUN THE BOT ============================
 keep_alive()                   # calls web server to keep bot alive
-client.run(os.getenv('DCTOKEN'))    # gets DC token from secrets
+print(f"Loaded token? {'Yes' if os.getenv('DCTOKEN') else 'No'}")
