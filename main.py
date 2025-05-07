@@ -1,8 +1,10 @@
 import discord                 # discord.py
 import os                      # for the token
 import json                    # to read the JSON from the API
+import requests
 import random                  # for randomizing the quotes (encouragement)
 import sqlite3                 # replacement for replit database
+db = sqlite3.connect('/tmp/bot.db')
 from keep_alive import keep_alive    # imports web server to keep bot alive
 import asyncio
 from discord.ext import tasks   # rate limit handling for sad words
