@@ -1,6 +1,7 @@
 discord.py
 feedparser
 Flask
+requests
 
 
 #this is for Render to know what libraries to install
