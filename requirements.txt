@@ -1,0 +1,6 @@
+discord.py
+feedparser
+Flask
+
+
+#this is for Render to know what libraries to install
